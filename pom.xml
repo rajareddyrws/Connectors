@@ -33,6 +33,15 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
+				<executions>
+				<execution>
+				<id>make-assembly</id>
+				<phase>package</phase>
+				<goals>
+				<goal>assembly</goal>
+				</goals>
+				</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

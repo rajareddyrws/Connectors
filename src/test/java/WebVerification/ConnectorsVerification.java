@@ -23,7 +23,8 @@ public class ConnectorsVerification extends BoxVerify {
 	public void extentReportStart() {
 
 		String report = "Connectors" + getDate("yyyy-MM-dd") + ".html";
-		reporter = new ExtentHtmlReporter("./OutPut/" + report);
+		reporter = new ExtentHtmlReporter(Local_Folder_Connectors + report);
+		//reporter = new ExtentHtmlReporter("./OutPut/" + report);
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 	}
